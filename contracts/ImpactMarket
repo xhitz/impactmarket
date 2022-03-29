@@ -1,0 +1,90 @@
+// SPDX-License-Identifier: GPL-3.0
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+//   
+
+
+//
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//      @artist ::          stereoIII6.eth                                                                                                                                          //
+//      @msg ::             stereoIII6.eth.chat                                                                                                                                     //
+//      @github ::          stereoIII6                                                                                                                                              //
+//                                                                                                                                                                                  //
+//      @dev ::             stereoIII6.eth                                                                                                                                          //
+//      @msg ::             stereoIII6.eth.chat                                                                                                                                     //
+//      @github ::          stereoIII6                                                                                                                                              //
+//                                                                                                                                                                                  //
+//      @author ::          stereoIII6.eth                                                                                                                                          //
+//      @msg ::             stereoIII6.eth.chat                                                                                                                                     //
+//      @github ::          stereoIII6                                                                                                                                              //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+//                                                                                                                                                                                  //
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//      @title ::                                                                                                                                                        //
+//      @description ::                                                                                                                          //
+//      @version ::         0.0.1                                                                                                                                                   //
+//      @purpose ::                                                                                                                              //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+//                                                                                                                                                                                  //
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+
+pragma solidity ^0.8.0;
+/** 
+Open Zeppelin Imports
+**/
+// import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
+// import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+// import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+// import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+// import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
+
+contract ImpactMarket is IERC1155, IERC721 {
+    constructor () {
+
+    }
+    mapping(address => mapping(address => bool)) internal CollectionIsApproved;
+
+    function approveCollection(bool _new, address _contract, string calldata _name) external returns(bool) 
+    { 
+        address IM = address(this);
+        if(_new){
+            
+        }
+        return true;
+    }
+    function createSale(bool _new, address _contract, uint256 _id, uint256 _amnt, uint256 _price) external returns(bool)
+    {
+        return true;
+    }
+    function makeOffer(bool _new, address _contract, uint256 _id, uint256 _amnt, uint256 _price) external returns(bool)
+    {
+        return true;
+    }
+    function acceptOffer(bool _new, address _contract, uint256 _id, uint256 _amnt, uint256 _price) external returns(bool)
+    {
+        return true;
+    }
+    function buySale(bool _new, address _contract, uint256 _id, uint256 _amnt, uint256 _price) external returns(bool)
+    {
+        return true;
+    }
+    fallback() external{
+
+    }
+
+}
